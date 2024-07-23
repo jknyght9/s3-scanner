@@ -1,0 +1,31 @@
+{
+  "name": "s3-scanner",
+  "version": "1.0.0",
+  "description": "Scans S3 buckets",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "scan": "node --loader ts-node/esm s3-scan.ts",
+    "convert": "node --loader ts-node/esm convert-json2csv.ts"
+  },
+  "keywords": [
+    "AWS",
+    "S3",
+    "Scanner",
+    "Typescript"
+  ],
+  "author": "Jacob Stauffer",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.614.0",
+    "@aws-sdk/credential-providers": "^3.616.0",
+    "fs": "^0.0.1-security",
+    "json2csv": "^6.0.0-alpha.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "@types/json2csv": "^5.0.7",
+    "@types/node": "^20.14.11"
+  }
+}
